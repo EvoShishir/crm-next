@@ -1,13 +1,14 @@
-import React from "react";
 import SidebarToggle from "./SidebarToggle";
 
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100 border-b-2 flex justify-between">
-      <div className="lg:hidden">
-        <SidebarToggle />
+      <div>
+        <div className="lg:hidden">
+          <SidebarToggle />
+        </div>
+        <a className="btn btn-ghost text-xl">HiveCRM</a>
       </div>
-      <a className="btn btn-ghost text-xl">HiveCRM</a>
       <div>
         <button className="btn btn-ghost btn-circle">
           <svg
