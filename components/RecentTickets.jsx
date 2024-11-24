@@ -1,7 +1,7 @@
 export default function RecentTickets() {
   return (
     <div className="overflow-x-auto">
-      <p className="font-medium mb-3">Recent Support Tickets</p>
+      <p className="font-medium mb-3 px-4">Recent Support Tickets</p>
       <table className="table">
         {/* head */}
         <thead>

@@ -41,8 +41,10 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <div className="mt-6 card bg-white py-4 border-2 flex flex-row">
-        <SalesChart />
+      <div className="mt-6 card bg-white py-4 border-2 grid grid-cols-1 lg:grid-cols-2">
+        <div>
+          <SalesChart />
+        </div>
         <RecentTickets />
       </div>
     </div>
