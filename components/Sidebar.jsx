@@ -14,7 +14,7 @@ export default function Sidebar({ children }) {
   const isActive = (path) => path === pathName;
 
   const SidebarLinksTop = [
-    { id: 1, path: "/homepage", name: "Dashboard", icon: <BiHomeAlt2 /> },
+    { id: 1, path: "/dashboard", name: "Dashboard", icon: <BiHomeAlt2 /> },
     { id: 2, path: "/sales", name: "Sales", icon: <PiChartLineUp /> },
     { id: 3, path: "/tickets", name: "Tickets", icon: <SlWrench /> },
     { id: 4, path: "/leads", name: "Leads", icon: <GrGroup /> },

@@ -2,7 +2,7 @@ import RecentTickets from "@/components/RecentTickets";
 import SalesChart from "@/components/SalesChart";
 import { IoTrendingUpOutline } from "react-icons/io5";
 
-function Homepage() {
+function Dashboard() {
   return (
     <div className="p-5">
       <h1 className="text-3xl font-bold mb-5">Overview</h1>
@@ -41,8 +41,9 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <div className="mt-6 card bg-white py-4 border-2 grid grid-cols-1 lg:grid-cols-2">
-        <div>
+      <div className="mt-6 card grid grid-cols-1 lg:grid-cols-2 gap-3">
+        <div className="bg-white shadow-lg border rounded-2xl py-4">
+          <p className="px-7 text-2xl font-medium mb-5">Sales Overview</p>
           <SalesChart />
         </div>
         <RecentTickets />
@@ -51,4 +52,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Dashboard;
