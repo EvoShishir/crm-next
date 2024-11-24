@@ -35,7 +35,7 @@ export default function Sidebar({ children }) {
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">{children}</div>
-      <div className="drawer-side border-r-2 h-full lg:h-[calc(100vh-66px)]">
+      <div className="drawer-side border-r-2 h-screen lg:h-[calc(100vh-66px)] ">
         <label
           htmlFor="my-drawer-2"
           aria-label="close sidebar"
