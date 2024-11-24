@@ -1,14 +1,17 @@
+import Link from "next/link";
 import SidebarToggle from "./SidebarToggle";
 
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 border-b-2 flex justify-between fixed top-0 left-0 w-full z-50">
+      <header className="navbar bg-base-100 border-b-2 flex justify-between fixed top-0 left-0 w-full z-50">
         <div>
           <div className="lg:hidden">
             <SidebarToggle />
           </div>
-          <a className="btn btn-ghost text-xl">HiveCRM</a>
+          <Link className="btn btn-ghost text-xl" href="/dashboard">
+            HiveCRM
+          </Link>
         </div>
         <div>
           <button className="btn btn-ghost btn-circle">
@@ -47,7 +50,7 @@ export default function Navbar() {
             </div>
           </button>
         </div>
-      </div>
+      </header>
       <div className="h-[66px]"></div>
     </>
   );

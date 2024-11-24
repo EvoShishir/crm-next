@@ -32,16 +32,16 @@ export default function Sidebar({ children }) {
   ];
 
   return (
-    <div className="drawer lg:drawer-open">
+    <aside className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content">{children}</div>
-      <div className="drawer-side border-r-2 h-screen lg:h-[calc(100vh-66px)] ">
+      <main className="drawer-content lg:ml-72">{children}</main>
+      <div className="drawer-side border-r-2 h-screen lg:h-[calc(100vh-66px)]">
         <label
           htmlFor="my-drawer-2"
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <div className="flex flex-col justify-between h-full bg-base-100">
+        <div className="flex flex-col justify-between h-full bg-base-100 lg:h-[calc(100vh-66px)] fixed">
           {/* Sidebar content here */}
           <ul className="menu bg-base-100 text-base-content w-72 p-4 text-xl">
             {SidebarLinksTop.map((link) => (
@@ -74,6 +74,6 @@ export default function Sidebar({ children }) {
           </ul>
         </div>
       </div>
-    </div>
+    </aside>
   );
 }
