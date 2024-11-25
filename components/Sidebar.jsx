@@ -41,7 +41,7 @@ export default function Sidebar({ children }) {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <div className="flex flex-col justify-between h-full bg-base-100 lg:h-[calc(100vh-66px)] fixed">
+        <div className="flex flex-col justify-between bg-base-100 h-[calc(100vh-66px)] fixed top-16">
           {/* Sidebar content here */}
           <ul className="menu bg-base-100 text-base-content w-72 p-4 text-xl">
             {SidebarLinksTop.map((link) => (
