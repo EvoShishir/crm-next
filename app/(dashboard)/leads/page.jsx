@@ -113,7 +113,7 @@ export default function Leads() {
   };
 
   return (
-    <div>
+    <div className="p-5">
       <div className="flex justify-between items-center">
         <button
           onClick={handleNewEntryClick}
